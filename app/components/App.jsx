@@ -1,10 +1,12 @@
 import React from 'react';
 
-export default class App extends React.Component {
+class App extends React.Component {
     render() {
         return (
             <div style={{textAlign: 'center'}}>
-                <h1>Hello World! Hi ReactJS</h1>
+                <h1>Hello World! Hi ReactJS!</h1>
             </div>);
     }
 }
+
+export default App;
