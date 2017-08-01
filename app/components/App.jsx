@@ -1,5 +1,7 @@
 import React from 'react';
 import Clock from './Clock.jsx';
+import ActionLink from './ActionLink.jsx';
+import LoginButton from './LoginButton.jsx'
 
 class App extends React.Component {
     render() {
@@ -9,6 +11,8 @@ class App extends React.Component {
 
                 <div>
                     <Clock />
+                    <ActionLink />
+                    <LoginButton/>
                 </div>
             </div>
         );

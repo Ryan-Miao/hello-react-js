@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     template: './app/index.html',
     filename: 'index.html',
@@ -7,10 +9,13 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-    entry: './app/index.js',
+    entry: {
+        app: './app/index.js',
+        clock: './app/components/step1-element.jsx'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index_bundle.js'
+        filename: '[name].bundle.js',
     },
     module: {
         loaders: [
@@ -18,5 +23,8 @@ module.exports = {
             { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ }
         ]
     },
-    plugins: [HtmlWebpackPluginConfig]
+    plugins: [
+        HtmlWebpackPluginConfig,
+        new CleanWebpackPlugin(['dist'])
+    ]
 };
