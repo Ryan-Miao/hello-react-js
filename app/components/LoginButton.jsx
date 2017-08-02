@@ -9,7 +9,7 @@ class LoginButton extends React.Component {
     render() {
         return (
             <button onClick={this.handleClick}>
-                Click me, auto bind this by lambda
+                Click me, auto bind this by lambda.
             </button>
         );
     }
