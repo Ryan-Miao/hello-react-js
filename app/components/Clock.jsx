@@ -3,7 +3,10 @@ import React from 'react';
 function FormattedDate(props) {
     return <h2> It is {props.date.toLocaleTimeString()}. </h2>
 }
-
+/**
+* @Author Ryan Miao
+* @Date 2017/08/02 20:58
+*/
 class Clock extends React.Component {
     constructor(props){
         super(props);

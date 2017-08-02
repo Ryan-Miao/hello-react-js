@@ -15,5 +15,4 @@ function Greeting(props){
     return <GuestGreeting/>
 }
 
-
 export default Greeting;
