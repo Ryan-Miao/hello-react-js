@@ -9,7 +9,7 @@ class Toggle extends React.Component {
         };
 
         //This bind is necessary to make `this` work in the callback
-        // this.handleClick = this.handleClick.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick() {
