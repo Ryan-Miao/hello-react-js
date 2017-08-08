@@ -10,6 +10,7 @@ import NumberList from './list-eg.jsx'
 import NumberList2 from './list2-eg.jsx'
 import Blog from './list3-eg.jsx'
 import NumberList4 from './list4-eg.jsx'
+import NumberList5 from './list5-eg.jsx'
 import NameForm from './NameForm.jsx'
 import {EssayForm} from './TextareaForm.jsx'
 import {FlavorForm} from './SelectForm.jsx'
@@ -63,6 +64,7 @@ class App extends React.Component {
                                 ]}/>
 
                     <NumberList4 numbers={[1,2,3,4]} />
+                    <NumberList5 numbers={[1,2,3,4,5]} />
                 </div>
 
                 <div style={{border: '1px solid #000'}}>
