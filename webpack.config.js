@@ -23,6 +23,10 @@ module.exports = {
             { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ }
         ]
     },
+    devtool: 'inline-source-map',
+    devServer: {
+         contentBase: './dist'
+   },
     plugins: [
         HtmlWebpackPluginConfig,
         new CleanWebpackPlugin(['dist'])

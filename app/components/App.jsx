@@ -10,6 +10,10 @@ import NumberList from './list-eg.jsx'
 import NumberList2 from './list2-eg.jsx'
 import Blog from './list3-eg.jsx'
 import NumberList4 from './list4-eg.jsx'
+import NameForm from './NameForm.jsx'
+import {EssayForm} from './TextareaForm.jsx'
+import {FlavorForm} from './SelectForm.jsx'
+import {Reservation} from './Reservation.jsx'
 
 class App extends React.Component {
     render() {
@@ -59,6 +63,19 @@ class App extends React.Component {
                                 ]}/>
 
                     <NumberList4 numbers={[1,2,3,4]} />
+                </div>
+
+                <div style={{border: '1px solid #000'}}>
+                    <NameForm />
+                </div>
+                <div style={{border: '1px solid #000'}}>
+                    <EssayForm />
+                </div>
+                <div style={{border: '1px solid #000'}}>
+                    <FlavorForm />
+                </div>
+                <div style={{border: '1px solid #000'}}>
+                    <Reservation />
                 </div>
             </div>
         );
