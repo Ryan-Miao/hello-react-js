@@ -15,6 +15,7 @@ import NameForm from './NameForm.jsx'
 import {EssayForm} from './TextareaForm.jsx'
 import {FlavorForm} from './SelectForm.jsx'
 import {Reservation} from './Reservation.jsx'
+import {Calculator} from './Calculator.jsx'
 
 class App extends React.Component {
     render() {
@@ -78,6 +79,9 @@ class App extends React.Component {
                 </div>
                 <div style={{border: '1px solid #000'}}>
                     <Reservation />
+                </div>
+                <div style={{border: '1px solid #000'}}>
+                    <Calculator />
                 </div>
             </div>
         );
