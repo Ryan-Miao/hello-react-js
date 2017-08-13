@@ -21,7 +21,7 @@ https://ryan-miao.github.io/2017/08/01/hello-react-js/
 https://ryan-miao.github.io/2017/08/03/react-tutorial-1/
 
 # Note
-react入门最后一个完整的例子是 `app/components/ProductList.jsx`。其中，数据流程是：![](http://oe20lp6p0.bkt.clouddn.com/blog/2017/productList-data-flow.png)
+react入门最后一个完整的例子是 `app/components/ProductList.jsx`。其中，数据流程是：![](http://oe20lp6p0.bkt.clouddn.com/blog/2017/productList-data-flow-d.png)
 
 ## How to print structure
 ```shell
