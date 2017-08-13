@@ -16,6 +16,8 @@ import {EssayForm} from './TextareaForm.jsx'
 import {FlavorForm} from './SelectForm.jsx'
 import {Reservation} from './Reservation.jsx'
 import {Calculator} from './Calculator.jsx'
+import {SignUpDialog} from './SignUpDialog'
+import FilterableProductTable from './ProductList'
 
 class App extends React.Component {
     render() {
@@ -68,12 +70,15 @@ class App extends React.Component {
                     <NumberList5 numbers={[1,2,3,4,5]} />
                 </div>
 
+
                 <div style={{border: '1px solid #000'}}>
                     <NameForm />
                 </div>
+
                 <div style={{border: '1px solid #000'}}>
                     <EssayForm />
                 </div>
+
                 <div style={{border: '1px solid #000'}}>
                     <FlavorForm />
                 </div>
@@ -82,6 +87,21 @@ class App extends React.Component {
                 </div>
                 <div style={{border: '1px solid #000'}}>
                     <Calculator />
+                </div>
+
+                <div style={{border: '1px solid #000'}}>
+                    <SignUpDialog />
+                </div>
+
+                <div style={{border: '1px solid #000'}}>
+                    <FilterableProductTable products={[
+                        {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+                        {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
+                        {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+                        {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+                        {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+                        {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+                    ]} />,
                 </div>
             </div>
         );
