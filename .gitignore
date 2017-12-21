@@ -3,4 +3,5 @@ node_modules/
 dist/
 *.log
 *.iml
+yarn.lock
 
